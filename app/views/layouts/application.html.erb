@@ -16,6 +16,7 @@
         <!-- no equals sign is if you don't want something to show up on the page -->
         <% flash.each do [name, msg] %>
           <%= content_tag(:div, msg, class:"alert alert-#{name}") %>
+            <% end %>
 
 		<%= yield %>
 	</div>
